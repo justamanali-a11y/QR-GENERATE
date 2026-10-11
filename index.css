@@ -1,0 +1,116 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    padding: 20px;
+}
+
+.container {
+    background: white;
+    width: 100%;
+    max-width: 430px;
+    padding: 35px 25px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    color: #222;
+    font-size: 28px;
+    margin-bottom: 12px;
+}
+
+.subtitle {
+    color: #666;
+    font-size: 14px;
+    margin-bottom: 25px;
+    line-height: 1.5;
+}
+
+input {
+    width: 100%;
+    padding: 14px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    font-size: 15px;
+    outline: none;
+    margin-bottom: 15px;
+}
+
+input:focus {
+    border-color: #667eea;
+}
+
+button {
+    width: 100%;
+    padding: 14px;
+    border: none;
+    border-radius: 10px;
+    background: #667eea;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #4c5fd5;
+    transform: translateY(-2px);
+}
+
+.qr-container {
+    display: none;
+    margin: 25px auto;
+    padding: 15px;
+    width: fit-content;
+    border: 1px solid #eee;
+    border-radius: 12px;
+}
+
+#qrcode img,
+#qrcode canvas {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.download-btn {
+    background: #16a34a;
+}
+
+.download-btn:hover {
+    background: #15803d;
+}
+
+.download-btn[hidden] {
+    display: none;
+}
+
+#message {
+    color: #dc2626;
+    font-size: 14px;
+    margin-top: 15px;
+    overflow-wrap: anywhere;
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 28px 18px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+}
